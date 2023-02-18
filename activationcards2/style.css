@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-family: lobster;
+    font-size: 4rem;
+}
+
+main {
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.block {
+    height: 180px;
+    width: 180px;
+    border: 4px solid black;
+    transition: 0.2s;
+    font-family: pathway gothic one, sans-serif;
+    text-align: center;
+    position: relative;
+    /* overflow: hidden; */
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.grow {
+    border-left: 650px solid black;
+    height: 200px;
+    width: 800px;
+    transition: 0.3s ease;
+    padding-top: 40px;
+}
+
+.hover-effect {
+    transform:scaleX(1.1);
+    padding-top: 40px;
+    transition: 0.2s;
+}
+
+p {
+    position: absolute;
+    background-color: white;
+    top: 130px;
+    width: 100px;
+    transition: 0.2s;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.description {
+    transition: 0.2s;
+    letter-spacing: 1px;
+    background-color: black;
+    color: aliceblue;
+    padding: 3px;
+}
+
+.shift {
+    top: 90px;
+    transition: 0.2s;
+}
+
+
+.full-description {
+    position: absolute;
+    width: 520px;
+    left: -600px;
+    top: 10px;
+    text-align: justify;
+    color: white;
+    z-index: 2;
+    visibility: hidden;
+}
+.unhide {
+    visibility: visible;
+}
